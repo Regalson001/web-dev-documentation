@@ -1,0 +1,143 @@
+/* ---------- Base Styles ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f7fb;
+  color: #263247;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+/* ---------- Navigation ---------- */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100vh;
+  overflow-y: auto;
+  background: #101c32;
+  border-right: 1px solid #263650;
+}
+
+#navbar header {
+  padding: 28px 22px;
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  border-bottom: 1px solid #34445e;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 22px;
+  color: #b9c7dc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #263650;
+  transition: 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffffff;
+  background: #1d3150;
+  border-left: 4px solid #26c6b5;
+  padding-left: 18px;
+}
+
+/* ---------- Main Documentation ---------- */
+#main-doc {
+  max-width: 1050px;
+  margin-left: 270px;
+  padding: 45px 55px;
+}
+
+.main-section {
+  margin-bottom: 32px;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(16, 28, 50, 0.04);
+  scroll-margin-top: 25px;
+}
+
+.main-section header {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  color: #142642;
+  font-size: 1.65rem;
+  font-weight: 700;
+  border-bottom: 2px solid #26c6b5;
+}
+
+.main-section p {
+  margin-bottom: 15px;
+  color: #526176;
+}
+
+.main-section ul {
+  margin: 15px 0 20px 25px;
+  color: #526176;
+}
+
+.main-section li {
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+
+.main-section code {
+  display: block;
+  margin: 12px 0 20px;
+  padding: 15px 18px;
+  overflow-x: auto;
+  background: #101c32;
+  color: #71e2d3;
+  border-radius: 7px;
+  font-family: Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive Layout ---------- */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-right: none;
+    border-bottom: 1px solid #263650;
+  }
+
+  #navbar header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 12px 20px;
+    text-align: center;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 25px 16px;
+  }
+
+  .main-section {
+    padding: 23px 18px;
+  }
+
+  .main-section header {
+    font-size: 1.4rem;
+  }
+}
