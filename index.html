@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A technical guide to modern web development using HTML and CSS.">
+    <title>Web Development | Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header>Web Development</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+      <a class="nav-link" href="#CSS_Fundamentals">CSS Fundamentals</a>
+      <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+      <a class="nav-link" href="#Best_Practices">Best Practices</a>
+    </nav>  
+
+    <main id="main-doc">
+
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Web development is the process of creating and maintaining websites and web applications.</p>
+        <p>It mainly involves three core technologies: HTML, CSS and Javascript.</p>
+        <p>HTML provides structure, while CSS controls presentation and layout.</p>
+        <ul>
+          <li>HTML defines page content.</li>
+          <li>CSS styles the interface.</li>
+        </ul>
+        <p>A basic HTML document starts with:</p>
+        <code>&lt;!DOCTYPE html&gt;</code>
+      </section>
+
+      <section class="main-section" id="HTML_Basics"> 
+        <header>HTML Basics</header>
+        <p>HTML stands for HyperText Markup Language.</p>
+        <p>It uses elements to organize content on a web page.</p>
+        <p>Most HTML elements have an opening tag and a closing tag.</p>
+        <ul>
+          <li>Headings define content titles.</li>
+          <li>Paragraphs contain text.</li>
+          <li>Links connect different pages.</li>
+        </ul>
+        <p>A heading can be written as:</p>
+        <code>&lt;h1&gt;Welcome&lt;/h1&gt;</code>
+        <p>A paragraph can be written as:</p>
+        <code>&lt;p&gt;Hello world!&lt;/p&gt;</code>
+      </section>
+
+      <section class="main-section" id="CSS_Fundamentals">
+        <header>CSS Fundamentals</header>
+        <p>CSS stands for Cascading Style Sheets.</p>
+        <p>It controls colors, fonts, spacing, borders, and page layouts.</p>
+        <p>CSS rules consist of selectors and declaration blocks.</p>
+        <ul>
+          <li>Selectors target HTML elements.</li>
+          <li>Properties define visual styles.</li>
+          <li>Values determine how properties appear.</li>
+        </ul>
+        <p>Here is a simple CSS rule:</p>
+        <code>body { font-family: Arial, sans-serif; }</code>
+      </section>
+
+      <section class="main-section" id="Responsive_Design">
+        <header>Responsive Design</header>
+        <p>Responsive design makes websites adapt to different screen sizes.</p>
+        <p>Flexible layouts help content remain readable on mobile devices.</p>
+        <p>CSS Grid and Flexbox are useful tools for creating responsive layouts.</p>
+        <ul>
+          <li>Use flexible widths.</li>
+          <li>Include viewport settings.</li>
+          <li>Test layouts on different devices.</li>
+        </ul>
+        <p>A media query can target smaller screens:</p>
+        <code>@media (max-width: 768px) {...}</code>
+      </section>
+
+      <section class="main-section" id="Best_Practices">
+        <header>Best Practices</header>
+        <p>Good web development requires clean, organized, and accessible code.</p>
+        <p>Semantic HTML improves document structure and accessibility.</p>
+        <p>Consistent CSS makes projects easier to maintain.</p>
+        <ul>       
+          <li>Use meaningful element names and structure.</li>
+          <li>Write readable and reusable CSS.</li>
+          <li>Add alternative text to meaningful images.</li>
+          <li>Maintain sufficient color contrast.</li>
+        </ul>
+        <p>Always validate your HTML and test your responsive layouts.</p>
+        <code>&lt;img src="image.jpg" alt="Description"&gt;</code>
+      </section>        
+
+    </main>
+  </body>
+</html>
